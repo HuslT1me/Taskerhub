@@ -1,0 +1,58 @@
+.container {
+    max-width: 1230px !important;
+  }
+  
+  @media screen and (max-width: 1536px) {
+    .container {
+      max-width: 1230px !important;
+    }
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .container {
+      max-width: calc(100% - 50px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .container {
+      max-width: calc(100% - 50px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      max-width: calc(100% - 40px) !important;
+    }
+  }
+
+body {
+    font-family: 'manrope', sans-serif;
+}
+
+.introbold{
+    font-family: 'Intro Bold', sans-serif;
+    font-weight: 700;
+}
+
+.font-montserrat{
+  font-family:  'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+
+.card-title-decor::after {
+  display: block;
+  position: absolute;
+  content: '';
+  border-color: #000;
+  border-bottom-width: 3px;
+  width: 199px;
+  height: 0;
+  opacity: 0.8;
+  bottom: -29px;
+  left: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+

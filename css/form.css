@@ -1,0 +1,12 @@
+.form-bg{
+    display: block;
+    content: '';
+    background-image: url(../media/theme/login-companys.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom bottom;
+    width: 100vw;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+}

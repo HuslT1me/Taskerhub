@@ -1,0 +1,3 @@
+.title-clamp {
+    font-size: clamp(2.125rem, 1.4821rem + 3.2143vw, 4.375rem); 
+ }
