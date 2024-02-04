@@ -1,0 +1,16 @@
+.icon-big-star {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    background: url(../media/icons/big-star_active.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .icon-big-star.disable {
+    background: url(../media/icons/big-star_disable.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }

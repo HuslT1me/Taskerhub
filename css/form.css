@@ -1,12 +1,43 @@
-.form-bg{
+.bg-login-companys{
     display: block;
+    position: absolute;
     content: '';
     background-image: url(../media/theme/login-companys.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom bottom;
-    width: 100vw;
-    height: 100vh;
-    bottom: 0;
-    right: 0;
+    inset: 28% 0 0 0;
+    z-index: -1;
+}
+
+.bg-login-freelancers{
+    display: block;
+    position: absolute;
+    content: '';
+    background-image: url(../media/theme/login-freelancers.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    inset: 0 0 0 0;
+    z-index: -1;
+}
+
+.check_label::before {
+    position: relative;
+}
+
+.check_label::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: solid 1px; 
+    border-color: #ACACAC; 
+    border-radius: 3px;
+    left: -20px;
+    bottom: 2px;
+}
+
+.check_label:checked + .check {
+    background: ;
+    background-color: red;
 }

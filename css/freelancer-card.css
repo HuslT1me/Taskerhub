@@ -1,0 +1,13 @@
+.freelancer-card-decor::after {
+    display: block;
+    position: absolute;
+    content: '';
+    border-color: #000;
+    border-bottom-width: 3px;
+    height: 0;
+    opacity: 0.8;
+    bottom: -34px;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+  }

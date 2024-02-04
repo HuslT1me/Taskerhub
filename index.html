@@ -1,114 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="main">
-      <style>
-        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
-        * {
-          box-sizing: border-box;
-        }
-        body {
-          font-family: "Roboto", sans-serif;
-        }
-        .main {
-          display: flex;
-          justify-content: flex-start;
-          align-items: flex-start;
-          flex-wrap: wrap;
-          gap: 30px;
-          width: 100%;
-          padding: 20px;
-        }
 
-        .block {
-          display: flex;
-          width: 100%;
-          max-width: 400px;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-        .block__wrapper {
-          width: 100%;
-          padding: 20px;
-          border: 1px solid #e5e7eb;
-          border-radius: 8px;
-        }
+<body>
+  <div class="main">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
-        .block__title {
-          font-size: 20px;
-          line-height: 30px;
-          font-weight: 600;
-          margin-bottom: 30px;
-        }
+      * {
+        box-sizing: border-box;
+      }
 
-        .block__subtitle {
-          font-size: 16px;
-          line-height: 24px;
-          font-weight: 400;
-          margin-bottom: 5px;
-        }
+      body {
+        font-family: "Roboto", sans-serif;
+      }
 
-        .block__row {
-          display: grid;
-          grid-template-columns: repeat(3, 1fr);
-          grid-column-gap: 2px;
-          grid-row-gap: 2px;
-          margin-bottom: 20px;
-          background: rgba(156, 163, 175, 0.1);
-          border-radius: 6px;
-        }
+      .main {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 30px;
+        width: 100%;
+        padding: 20px;
+      }
 
-        .block__row:last-child {
-          margin-bottom: 0px;
-        }
+      .block {
+        display: flex;
+        width: 100%;
+        max-width: 400px;
+      }
 
-        .block__row_2 {
-          grid-template-columns: repeat(2, 1fr);
-        }
+      .block__wrapper {
+        width: 100%;
+        padding: 20px;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+      }
 
-        .block__row_4 {
-          grid-template-columns: repeat(4, 1fr);
-        }
+      .block__title {
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
 
-        .block__row a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 10px;
-          min-height: 54px;
-          border-right: 1px solid #fff;
+      .block__subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
 
-          text-align: center;
-          font-size: 14px;
-          line-height: 16px;
-          color: rgb(92, 102, 116);
-          text-decoration: none;
-        }
+      .block__row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        margin-bottom: 20px;
+        background: rgba(156, 163, 175, 0.1);
+        border-radius: 6px;
+      }
 
-        .block__row a:nth-child(n + 3) {
-          border-right: 0px;
-        }
+      .block__row:last-child {
+        margin-bottom: 0px;
+      }
 
-        .block__row a.disabled {
-          opacity: 0.3;
-          pointer-events: none;
-        }
-      </style>
-      <section class="block">
-        <div class="block__wrapper">
-          <div class="block__title">Pages</div>
-          <div class="block__row">
-            <a href="pages/all/main-page.html"
-              target="_blank"
-              style="color: darkolivegreen"
-              >Main page</a>
-          </div>
+      .block__row_2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .block__row_4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .block__row a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        min-height: 54px;
+        border-right: 1px solid #fff;
+
+        text-align: center;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgb(92, 102, 116);
+        text-decoration: none;
+      }
+
+      .block__row a:nth-child(n + 3) {
+        border-right: 0px;
+      }
+
+      .block__row a.disabled {
+        opacity: 0.3;
+        pointer-events: none;
+      }
+    </style>
+    <section class="block">
+      <div class="block__wrapper">
+        <div class="block__title">Pages</div>
+        <div class="block__row">
+          <a href="pages/all/main-page.html" target="_blank" style="color: darkolivegreen">Main page</a>
+          <a href="pages/all/login-company.html" target="_blank" style="color: darkolivegreen">Login company</a>
+          <a href="pages/all/login-freelancers.html" target="_blank" style="color: darkolivegreen">Login freelancer</a>
+          <a href="pages/all/misc.html" target="_blank" style="color: darkolivegreen">Misc</a>
         </div>
-      </section>
-    </div>
-  </body>
+      </div>
+    </section>
+    <section class="block">
+      <div class="block__wrapper">
+        <div class="block__title">Freelancer</div>
+        <div class="block__row">
+          <a href="pages/freelancers/freelancers.html" target="_blank" style="color: darkolivegreen">Landing</a>
+          <a href="pages/freelancers/freelancers-catalog.html" target="_blank" style="color: darkolivegreen">Catalog</a>
+          <a href="pages/freelancers/freelancer-item.html" target="_blank" style="color: darkolivegreen">Item</a>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="block__wrapper">
+        <div class="block__title">Company</div>
+        <div class="block__row">
+          <a href="pages/companys/companys.html" target="_blank" style="color: darkolivegreen">Landing</a>
+          <a href="pages/companys/companys-catalog.html" target="_blank" style="color: darkolivegreen">Catalog</a>
+          <a href="pages/companys/company-item.html" target="_blank" style="color: darkolivegreen">Item</a>
+          <a href="pages/companys/task_item.html" target="_blank" style="color: darkolivegreen">Task item</a>
+        </div>
+      </div>
+    </section>
+    <section class="block">
+      <div class="block__wrapper">
+        <div class="block__title">Work</div>
+        <div class="block__row">
+          <a href="pages/works/work.html" target="_blank" style="color: darkolivegreen">Landing</a>
+          <a href="pages/works/work-catalog.html" target="_blank" style="color: darkolivegreen">Catalog</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
 </html>

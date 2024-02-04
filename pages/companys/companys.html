@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/fonts/fonts.css" />
+    <link rel="stylesheet" href="../../css/castom.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/header-banner.css" />
+    <link rel="stylesheet" href="../../css/footer-banner.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/category.css" />
+    <link rel="stylesheet" href="../../css/task-card.css" />
+    <link rel="stylesheet" href="../../css/stars-block.css" />
+    <link rel="stylesheet" href="../../css/freelancer-card.css" />
+    <title>Noname</title>
+  </head>
+  <body>
+    <div w3-include-html="../../components/header.html"></div>
+    <!-- header-banner -->
+    <section class="pt-[30px] mb-[30px] md:pt-[66px] md:mb-[83px]">
+        <div class="container mx-auto">
+            <div class="flex flex-col justify-between mb-10 md:mb-[71px] md:flex-row">
+              <h1 class="title-clamp introbold leading-tight w-full md:max-w-[701px] md:leading-[70px]">
+                Publish your tasks and get professional offers today
+              </h1>
+              <div class="mt-[13px] md:mr-[38px]">
+                <p class="w-full leading-[30px] md:max-w-[350px]">
+                    Invite freelancers from all over the world — with any tax status — to Billinger.
+                    We check their background. Freelancers can apply for a free consultation on all tax issues
+                </p>
+                <div class="flex mt-5 md:mt-[35px]">
+                  <a class="text-base font-bold leading-5 flex items-center justify-center px-[23px] h-[48px] rounded-[40px] border-[2px] border-black md:text-lg hover:bg-black hover:text-white transition-colors duration-300" href="#">
+                    Join as a Company
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="border-t-[2px] border-black pt-[13px]">
+              <img class="object-cover object-center h-[300px] md:h-[551px]" src="../../media/companys/header-banner.jpg" alt="promo-picture" />
+            </div>
+        </div>
+    </section>
+    <!-- header-banner-end -->
+    <section w3-include-html="../../components/category.html" class="mb-14 md:mb-[89px]"></section>
+    <!-- futures -->
+    <section class="mb-[30px] md:mb-[217px]">
+        <div class="container mx-auto">
+            <div class="text-white w-full">
+              <div class="flex flex-col md:flex-row relative">
+                <div class="bg-black flex flex-col w-full max-w-[1120px]">
+                  <div class="pl-5 pr-5 pb-5 md:pl-[45px] md:pb-[45px]">
+                    <div class="border-b-[4px] border-white p-[20px_0_20px] mb-5 max-w-[660px] w-full md:p-[35px_0_23px] md:mb-[65px]">
+                      <p class="introbold md:text-[22px]">What you’ll get</p>
+                    </div>
+                    <div class="max-w-[660px] w-full border-b-[2px] pb-5 border-white border-opacity-60 md:pb-[27px]">
+                      <h4 class="text-2xl leading-none introbold pb-[22px] md:pr-0 md:text-[40px]">Effortless task management</h4>
+                      <p class="text-sm leading-8 max-w-[591px] md:text-base md:leading-[30px]">
+                        Create tasks effortlessly on our platform or automate the process using API or file import. Simplify task administration with options like adding insurance or securing rights with a single click.
+                      </p>
+                    </div>
+                    <div class="max-w-[660px] w-full p-[20px_0_20px] border-b-[2px] border-white border-opacity-60 md:p-[32px_0_27px]">
+                      <h4 class="text-2xl leading-none introbold pb-[22px] md:text-[40px]">Streamlined legal support</h4>
+                      <p class="text-sm leading-8 max-w-[591px] md:text-base md:leading-[30px]">
+                        Receive monthly acceptance deeds and request invoices at any time. Maintain confidentiality with separate deeds and reports for projects involving multiple clients. Choose between electronic.
+                      </p>
+                    </div>
+                    <div class="max-w-[660px] w-full p-[20px_0_20px] border-b-[2px] border-white border-opacity-60 md:p-[32px_0_27px]">
+                      <h4 class="text-2xl leading-none introbold pb-[22px] md:text-[40px]">Flexible payment solutions</h4>
+                      <p class="text-sm leading-8 max-w-[591px] md:text-base md:leading-[30px]">
+                        Pay only for completed work. Safeguard your funds with our secure account system, which offers refunds for unfinished tasks. Experience hassle-free payments to bank accounts, cards, or e-wallets.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <img class="w-full top-[90px] max-h-[495px] aspect-square block h-[calc(100vw-40px)] object-cover object-[0_bottom] right-0 z-10 md:absolute md:w-[495px] md:h-full md:max-h-[100%]" src="../../media/companys/futures-img.jpg" alt="futures-img" />
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- futures-end -->
+    <section w3-include-html="../../components/freelances-showcase.html" class="mb-[30px] md:mb-[143px]"></section>
+    <div w3-include-html="../../components/footer.html"></div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName('*');
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute('w3-include-html');
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = 'Page not found.';
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute('w3-include-html');
+                includeHTML();
+              }
+            };
+            xhttp.open('GET', file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+    </script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>

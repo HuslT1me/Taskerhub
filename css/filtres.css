@@ -1,0 +1,37 @@
+.hover-border:hover {
+    border-color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+  }
+  
+  .select::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 12px;
+    display: block;
+    width: 8px;
+    height: 4px;
+    background: url(../media/icons/select-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.3s;
+    z-index: 5;
+  }
+  
+  :hover.select::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 12px;
+    display: block;
+    width: 8px;
+    height: 4px;
+    background: url(../media/icons/select-arrow-down_black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.3s;
+    transform: rotate(180deg);
+    z-index: 5;
+  }

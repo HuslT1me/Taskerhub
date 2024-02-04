@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/fonts/fonts.css" />
+    <link rel="stylesheet" href="../../css/castom.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/header-banner.css" />
+    <link rel="stylesheet" href="../../css/footer-banner.css" />
+    <link rel="stylesheet" href="../../css/header.css" />
+    <link rel="stylesheet" href="../../css/category.css" />
+    <link rel="stylesheet" href="../../css/task-card.css" />
+    <link rel="stylesheet" href="../../css/stars-block.css" />
+    <link rel="stylesheet" href="../../css/freelancer-card.css" />
+    <link rel="stylesheet" href="../../css/work.css" />
+    <title>Noname</title>
+  </head>
+  <body>
+    <div w3-include-html="../../components/header.html"></div>
+    <section class="pt-10 md:pt-[82px] pb-[60px] md:pb-[150px]">
+        <div class="container mx-auto">
+            <div class="flex items-center md:mb-[88px] gap-4">
+                <a href="#">
+                  <img src="../../media/icons/arrow-misc.svg" alt="" class="fill-black">
+                </a>
+                <h1 class="text-[40px]  introbold font-bold">Customer Offer Agreement</h1>
+            </div>
+            
+          <div class="misc-content">
+            <h4 class="text-[17px] font-bold leading-[24px] pb-2.5 md:pb-[5px]">What Are Cookies</h4>
+            <p class="text-[16px] leading-[27px] tracking-[0.16px] py-2.5 md:py-5">
+              As is common practice with almost all professional websites this site uses cookies, which are tiny files that are downloaded to your computer, to improve your experience. This page describes what information they gather, how we
+              use it and why we sometimes need to store these cookies. We will also share how you can prevent these cookies from being stored however this may downgrade or 'break' certain elements of the sites functionality.
+            </p>
+    
+            <h4 class="text-[17px] font-bold leading-[24px] pb-[5px]">How We Use Cookies</h4>
+    
+            <p class="text-[16px] leading-[27px] tracking-[0.16px] py-2.5 md:py-5">
+              We use cookies for a variety of reasons detailed below. Unfortunately in most cases there are no industry standard options for disabling cookies without completely disabling the functionality and features they add to this site.
+              It is recommended that you leave on all cookies if you are not sure whether you need them or not in case they are used to provide a service that you use.
+            </p>
+    
+            <h4 class="text-[17px] font-bold leading-[24px] pb-[5px]">Disabling Cookies</h4>
+    
+            <p class="text-[16px] leading-[27px] tracking-[0.16px] py-2.5 md:py-5">
+              You can prevent the setting of cookies by adjusting the settings on your browser (see your browser Help for how to do this). Be aware that disabling cookies will affect the functionality of this and many other websites that you
+              visit. Disabling cookies will usually result in also disabling certain functionality and features of the this site. Therefore it is recommended that you do not disable cookies.
+            </p>
+    
+            <h3 class="text-[24px] leading-[24px] pt-[20px] pb-[40px]">The Cookies We Set</h3>
+    
+            <h4 class="text-[17px] font-bold leading-[24px] pb-[5px]">Forms related cookies</h4>
+    
+            <p class="text-[16px] leading-[27px] tracking-[0.16px] py-2.5 md:py-5">
+              When you submit data to through a form such as those found on contact pages or comment forms cookies may be set to remember your user details for future correspondence.
+            </p>
+    
+            <h4 class="text-[17px] font-bold leading-[24px] pb-[5px]">Third Party Cookies</h4>
+    
+            <p class="text-[16px] leading-[27px] tracking-[0.16px] py-2.5 md:py-5">
+              In some special cases we also use cookies provided by trusted third parties. The following section details which third party cookies you might encounter through this site.
+            </p>
+    
+            <p class="text-[16px] leading-[27px] tracking-[0.16px] py-2.5 md:py-5">
+              This site uses Google Analytics which is one of the most widespread and trusted analytics solution on the web for helping us to understand how you use the site and ways that we can improve your experience. These cookies may
+              track things such as how long you spend on the site and the pages that you visit so we can continue to produce engaging content. For more information on Google Analytics cookies, see the official Google Analytics page.<br />
+              From time to time we test new features and make subtle changes to the way that the site is delivered. When we are still testing new features these cookies may be used to ensure that you receive a consistent experience whilst on
+              the site whilst ensuring we understand which optimisations our users appreciate the most.
+            </p>
+    
+            <h4 class="text-[17px] font-bold leading-[24px] pb-[5px]">More Information</h4>
+    
+            <p class="text-[16px] leading-[27px] tracking-[0.16px] py-2.5 md:py-5">
+              Hopefully that has clarified things for you and as was previously mentioned if there is something that you aren't sure whether you need or not it's usually safer to leave cookies enabled in case it does interact with one of the
+              features you use on our site.
+              <br />
+              However if you are still looking for more information then you can contact us through one of our preferred contact methods:
+            </p>
+          </div>
+        </div>
+      </section>
+    <div w3-include-html="../../components/footer.html"></div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop through a collection of all HTML elements: */
+        z = document.getElementsByTagName('*');
+        for (i = 0; i < z.length; i++) {
+          elmnt = z[i];
+          /*search for elements with a certain atrribute:*/
+          file = elmnt.getAttribute('w3-include-html');
+          if (file) {
+            /* Make an HTTP request using the attribute value as the file name: */
+            xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+              if (this.readyState == 4) {
+                if (this.status == 200) {
+                  elmnt.innerHTML = this.responseText;
+                }
+                if (this.status == 404) {
+                  elmnt.innerHTML = 'Page not found.';
+                }
+                /* Remove the attribute, and call this function once more: */
+                elmnt.removeAttribute('w3-include-html');
+                includeHTML();
+              }
+            };
+            xhttp.open('GET', file, true);
+            xhttp.send();
+            /* Exit the function: */
+            return;
+          }
+        }
+      }
+    </script>
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
+
+

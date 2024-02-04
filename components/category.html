@@ -1,53 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/fonts/fonts.css">
-    <link rel="stylesheet" href="../../css/castom.css">
-    <title>Document</title>
-</head>
-<body>
-  <div class="mx-5 md:mx-20 pt-20 flex gap-5"><!--Открывающий тест див-->
-    <article class="p-[40px_26px_25px_27px] border-[2px] border-black flex flex-col w-full md:max-w-[366px]">
-        <a class="mb-[41px] w-[113px] h-[94px] hover:opacity-70 transition-opacity duration-300" href="#">
-            <img class="w-full h-full object-cover object-center" src="../media/category/programming.svg" alt="Design / Branding & Creativity">
-        </a>
-        <div class="border-t-[4px] border-black pt-[21px]">
-            <a class="text-2xl leading-7 introbold hover:opacity-70 transition-opacity duration-300" href="#">
-                Programming & Development
-            </a>
+<div class="container mx-auto">
+  <div class="decor-line max-w-[254px] pb-[19px] md:mb-[71px] relative">
+    <p class="text-[22px] introbold">Choose a task category:</p>
+  </div>
+  <div class="flex flex-col md:flex-row justify-between gap-y-5">
+    <div class="flex flex-col md:flex-row gap-5 w-full">
+      <!-- Подгружаем компонент карточки категории -->
+      <article w3-include-html="/components/category-link.html" class="p-[0_26px_25px_27px] border-[2px] border-black grid grid-rows-[176px_1fr] w-full md:max-w-[366px]"></article>
+      <!-- компонент подключил -->
+      <article class="p-[0_26px_25px_27px] border-[2px] border-black grid grid-rows-[176px_1fr] w-full md:max-w-[366px]">
+        <div class="flex items-center">
+          <a class="max-w-[120px] max-h-[94px] block hover:opacity-70 transition-opacity duration-300" href="#">
+            <img class="w-full h-full object-contain object-center" src="../../media/category/design.svg" alt="Design / Branding & Creativity" />
+          </a>
         </div>
-    </article>
-    <article class="p-[47px_26px_25px_27px] border-[2px] border-black flex flex-col w-full md:max-w-[366px]">
-        <a class="mb-[48px] w-[120px] h-[80px] hover:opacity-70 transition-opacity duration-300" href="#">
-            <img class="w-full h-full object-cover object-center" src="../media/category/design.svg" alt="Design / Branding & Creativity">
-        </a>
-        <div class="border-t-[4px] border-black pt-[21px]">
-            <a class="text-2xl leading-7 introbold hover:opacity-70 transition-opacity duration-300" href="#">
-                Design / Branding & Creativity
-            </a>
+        <div class="border-t-[4px] border-black pt-[21px] mb-auto">
+          <a class="text-2xl leading-7 introbold hover:opacity-70 transition-opacity duration-300" href="#">Design / Branding & Creativity </a>
         </div>
-    </article>
-    <article class="p-[48px_26px_25px_27px] border-[2px] border-black flex flex-col w-full md:max-w-[366px]">
-        <a class="mb-[48px] w-[109px] h-[79px] hover:opacity-70 transition-opacity duration-300" href="#">
-            <img class="w-full h-full object-cover object-center" src="../media/category/seo_smm.svg" alt="Design / Branding & Creativity">
-        </a>
-        <div class="border-t-[4px] border-black pt-[21px]">
-            <a class="text-2xl leading-7 introbold hover:opacity-70 transition-opacity duration-300" href="#">
-                SEO, SMM, IT Marketing
-            </a>
+      </article>
+      <article class="p-[0_26px_25px_27px] border-[2px] border-black grid grid-rows-[176px_1fr] w-full md:max-w-[366px]">
+        <div class="flex items-center">
+          <a class="max-w-[120px] max-h-[94px] block hover:opacity-70 transition-opacity duration-300" href="#">
+            <img class="w-full h-full object-contain object-center" src="../../media/category/seo_smm.svg" alt="Design / Branding & Creativity" />
+          </a>
         </div>
-    </article>
-    <div class="flex flex-col ml-[21px] gap-y-[15px]">
-        <button class="btn-slidder w-[51px] h-[24px] bg-black rounded-[40px]">
-            <img class="ml-[11px]" src="../media/icons/arrow-btn.svg" alt="arrow">
-        </button>
-        <span class="text-2xl font-extralight leading-7 pl-2.5 pb-[9px] border-b-[2px] border-black max-w-[50px]">
-            +3
-        </span>
+        <div class="border-t-[4px] border-black pt-[21px] mb-auto">
+          <a class="text-2xl leading-7 introbold hover:opacity-70 transition-opacity duration-300" href="#">SEO, SMM, IT Marketing</a>
+        </div>
+      </article>
+      <!-- end -->
     </div>
-  </div> <!-- Закрвающий тест див -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</body>
-</html>
+
+    <div class="flex flex-col ml-[21px] gap-y-[15px]">
+      <button class="btn-slidder w-[51px] h-[24px] bg-black rounded-[40px]">
+        <img class="ml-[11px]" src="../../media/icons/arrow-btn.svg" alt="arrow" />
+      </button>
+      <span class="text-2xl font-extralight leading-7 pl-2.5 pb-[9px] border-b-[2px] border-black max-w-[50px]"> +3 </span>
+    </div>
+  </div>
+</div>
