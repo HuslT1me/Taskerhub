@@ -17,17 +17,10 @@
     <section class="mb-[100px] md:mb-[142px]">
         <div class="container mx-auto">
             <div w3-include-html="../../components/catalog-name.html" class="md:mb-[94px]"></div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-[13px]">
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
-                <div w3-include-html="../../components/task-card.html"></div>
+            <div class="offer__list grid grid-cols-1 md:grid-cols-2 gap-[13px]">
+                <!-- Сюда выводятся карточки task-card скриптом renderTaskCards -->
+              <!-- task-card -->
+              <!-- task-card -->
             </div>
         </div>
     </section>
@@ -69,5 +62,38 @@
     <script>
       includeHTML();
     </script>
+    <script src="renderTaskCards.js"></script>
+    <template id="card-template">
+      <div class="card flex flex-col w-full bg-white p-5 md:p-[27px_35px_31px_34px] border-[2px] border-black">
+        <div class="flex w-full items-start md:h-[95px] pb-[29px] mb-[37px]">
+          <a class="card__link card-title-decor relative" href="">
+            <span class="card__name text-xl md:text-3xl text-[#141133] font-bold introbold md:leading-[38px] tracking-[-0.3px] line-clamp-2 hover:opacity-50 transition-colors duration-300">
+              <!-- cardName -->
+            </span>
+          </a>
+        </div>
+        <div class="grid md:grid-rows-[1fr_130px] md:grid-cols-1 flex-1">
+          <div class="w-full border-b-[2px] border-black border-opacity-45 pb-3.5 md:pb-0">
+            <ul class="flex flex-wrap md:flex-row text-black pb-[19px] gap-3 md:gap-[28px]">
+              <li class="card__posted text-sm font-normal leading-5">
+                <!-- cardPosted -->
+              </li>
+              <li class="card__amount text-sm font-extrabold leading-5">
+                <!-- cardAmount -->
+              </li>
+              <li class="card__deadline text-sm font-normal leading-5">
+                <!-- cardDeadline -->
+              </li>
+            </ul>
+            <ul class="card__tags flex flex-wrap text-xs text-white font-montserrat leading-5 gap-3 pb-3.5 md:pb-6">
+              <!-- cardTag -->
+              <!-- cardTag -->
+              <!-- cardTag -->
+            </ul>
+          </div>
+          <p class="card__description text-sm md:text-[15px] mt-[15px] md:mt-[22px] leading-[26px] line-clamp-5 tracking-[-0.48px]"></p>
+        </div>
+      </div>
+    </template>
   </body>
 </html>
