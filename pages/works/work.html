@@ -73,13 +73,13 @@
     <script src="renderTaskCards.js"></script>
     <!-- Темплейт для карточек категорий -->
     <template id="category-template">
-      <article class="category swiper-slide p-[0_26px_25px_27px] border-[2px] border-black grid grid-rows-[178px_1fr] w-full">
+      <article class="category swiper-slide p-[0_26px_25px_27px] border-[1px] border-black grid grid-rows-[178px_1fr] w-full">
         <div class="flex items-center">
           <a class="category__link max-w-[120px] max-h-[94px] block hover:opacity-70 transition-opacity duration-300" href="">
             <img class="category__image w-full h-full object-contain object-center" src="" alt="" />
           </a>
         </div>
-        <div class="border-t-[4px] border-black pt-[21px] mb-auto">
+        <div class="border-t-[3px] border-black pt-[21px] mb-auto">
           <a class="category__title text-2xl leading-7 introbold hover:opacity-70 transition-opacity duration-300" href="#"></a>
         </div>
       </article>
@@ -87,7 +87,7 @@
 
     <!-- Темплейт для карточек задач -->
     <template id="card-template">
-      <div class="card flex flex-col w-full bg-white p-5 md:p-[27px_35px_31px_34px] border-[2px] border-black">
+      <div class="card flex flex-col w-full bg-white p-5 md:p-[27px_35px_31px_34px] border-[1px] border-black">
         <div class="flex w-full items-start md:h-[95px] pb-[29px] mb-[37px]">
           <a class="card__link card-title-decor relative" href="">
             <span class="card__name text-xl md:text-3xl text-[#141133] font-bold introbold md:leading-[38px] tracking-[-0.3px] line-clamp-2 hover:opacity-50 transition-colors duration-300">
@@ -96,7 +96,7 @@
           </a>
         </div>
         <div class="grid md:grid-rows-[1fr_130px] md:grid-cols-1 flex-1">
-          <div class="w-full border-b-[2px] border-black border-opacity-45 pb-3.5 md:pb-0">
+          <div class="w-full border-b-[1px] border-black border-opacity-45 pb-3.5 md:pb-0">
             <ul class="flex flex-wrap md:flex-row text-black pb-[19px] gap-3 md:gap-[28px]">
               <li class="card__posted text-sm font-normal leading-5">
                 <!-- cardPosted -->
