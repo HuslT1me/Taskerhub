@@ -5,12 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/fonts/fonts.css" />
+    <link rel="stylesheet" href="../../src/output.css" />
     <link rel="stylesheet" href="../../css/castom.css" />
     <link rel="stylesheet" href="../../css/header.css" />
-    <link rel="stylesheet" href="../../css/task-card.css" />
     <link rel="stylesheet" href="../../css/freelancer-item.css" />
     <link rel="stylesheet" href="../../css/stars-block.css" />
-    <link rel="stylesheet" href="../../css/freelancer-card.css" />
     <title>Noname</title>
 </head>
 
@@ -31,9 +30,9 @@
                             <img src="../../media/icons/arrow-item-company.svg" alt="arrow">
                         </a>
                     </div>
-                    <div class="w-[140px] h-[46px] md:w-[153px] md:h-[49px]">
+                    <div class="md:w-[153px] md:h-[49px]">
                         <a href="#">
-                            <img src="../../media/companys/beauty_essence.webp" alt="" class="h-full w-full">
+                            <img src="../../media/companys/beauty_essence.webp" alt="logo">
                         </a>
                     </div>
                 </div>
@@ -52,7 +51,7 @@
                         with efficiency and high-quality standards.
                     </p>
                     <div class="flex flex-col gap-y-4 decorline-items after:top-0 relative pt-5 mt-5 md:gap-y-[30px] md:pt-[34px] md:mt-[34px]">
-                        <div class="flex gap-x-[23px] items-center">
+                        <div class="flex gap-x-[23px] items-center flex-wrap gap-y-2">
                             <div class="text-sm font-normal leading-5 mt-0 md:mt-1">12.04.2023</div>
                             <div class="text-sm leading-5 ml-0 md:ml-1.5">
                                 <span class="md:text-lg font-extrabold">$1200 </span>budjet</div>
@@ -61,7 +60,7 @@
                             </div>
                         </div>
                         <div class="flex gap-x-2.5">
-                            <ul w3-include-html="../../utils/tags.html"></ul>
+                            <ul w3-include-html="../../utils/tags.html" class="flex flex-wrap text-xs text-white font-montserrat leading-5 gap-3"></ul>
                         </div>
                     </div>
                 </div>
@@ -72,15 +71,14 @@
                     <p class="text-[22px] introbold flex place-self-start">Freelancer offers:</p>
                 </div>
                 <div class="grid grid-cols-1 gap-y-5 max-w-[947px] mt-0 md:gap-y-[62px] md:mt-2.5">
-                    <div w3-include-html="../../components/freelancerOffers.html"></div>
-                    <div w3-include-html="../../components/freelancerOffers.html"></div>
+                    <div w3-include-html="../../components/freelancerOffers.html" class="w-full bg-white p-5 md:p-[0_35px_27px_31px] border-[2px] border-black"></div>
+                    <div w3-include-html="../../components/freelancerOffers2.html" class="w-full bg-white p-5 md:p-[0_35px_27px_31px] border-[2px] border-black"></div>
                 </div>
             </div>
         </div>
     </section>
     <div w3-include-html="../../components/footer.html"></div>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         function includeHTML() {
             var z, i, elmnt, file, xhttp;

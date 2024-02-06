@@ -5,9 +5,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/fonts/fonts.css" />
+    <link rel="stylesheet" href="../../src/output.css" />
     <link rel="stylesheet" href="../../css/castom.css" />
     <link rel="stylesheet" href="../../css/header.css" />
-    <link rel="stylesheet" href="../../css/task-card.css" />
     <link rel="stylesheet" href="../../css/freelancer-item.css" />
     <link rel="stylesheet" href="../../css/stars-block.css" />
     <title>Noname</title>
@@ -72,17 +72,17 @@
                         </div>
                         <div class="flex gap-x-2.5 items-start md:items-center">
                             <p class="text-sm">Skills:</p>
-                            <ul w3-include-html="../../utils/tags.html"></ul>
+                            <ul w3-include-html="../../utils/tags.html" class="flex flex-wrap text-xs text-white font-montserrat leading-5 gap-3"></ul>
                         </div>
                     </div>
                 </div>
             </div>
             <hr class="bg-black h-[3px] w-full opacity-45">
-            <div class="mt-10 md:mt-[55px] flex flex-col justify-between md:flex-row">
+            <div class="mt-10 md:mt-[55px] flex flex-col justify-between mb-0 md:flex-row md:mb-12">
                 <div class="flex flex-col-reverse gap-y-5 justify-between items-center mb-5 md:flex-row md:mb-0">
                     <p class="text-[22px] introbold flex place-self-start">Client reviews:</p>
                 </div>
-                <div class="grid grid-cols-1 gap-y-[14px] max-w-[947px] mt-0 md:mt-2.5">
+                <div class="grid grid-cols-1 gap-y-[28px] max-w-[947px] mt-0 md:mt-2.5">
                     <div w3-include-html="../../components/reviewCard.html"></div>
                     <div w3-include-html="../../components/reviewCard.html"></div>
                 </div>
@@ -91,7 +91,6 @@
     </section>
     <div w3-include-html="../../components/footer.html"></div>
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         function includeHTML() {
             var z, i, elmnt, file, xhttp;

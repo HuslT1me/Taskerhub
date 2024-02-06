@@ -1,0 +1,22 @@
+.bg-main-showcase{
+    background-image: url(../media/main-page/task-showcase.webp);
+    background-position: center center;
+}
+
+.freelancers-showcase { 
+  background-image: url(../media/freelancers/task-showcase.webp);
+  background-position: center center
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .bg-main-showcase{
+    background-image: url(../media/main-page/task-showcase-hd.webp);
+    background-position: center center;
+}
+
+.freelancers-showcase { 
+  background-image: url(../media/freelancers/task-showcase-hd.webp);
+  background-position: center center
+}
+
+}

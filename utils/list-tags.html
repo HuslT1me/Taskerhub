@@ -1,45 +1,10 @@
-<div>
-    <ul class="flex flex-wrap md:flex-row text-black pb-[19px] gap-3 md:gap-[28px]">
+<div class="flex flex-col gap-y-[19px] mb-5 md:mb-[26px]">
+    <ul class="flex flex-wrap md:flex-row text-black gap-3 md:gap-[28px]">
       <li class="text-sm font-normal leading-5">12.04.2023</li>
       <li class="text-sm font-extrabold leading-5">$1200</li>
       <li class="text-sm font-normal leading-5">12.10.2023 deadline</li>
     </ul>
-    <ul w3-include-html="../../utils/tags.html"></ul>
+    <ul w3-include-html="../../utils/tags.html" class="flex flex-wrap text-xs text-white font-montserrat leading-5 gap-3"></ul>
   </div>
 
-  <script>
-    function includeHTML() {
-      var z, i, elmnt, file, xhttp;
-      /* Loop through a collection of all HTML elements: */
-      z = document.getElementsByTagName('*');
-      for (i = 0; i < z.length; i++) {
-        elmnt = z[i];
-        /*search for elements with a certain atrribute:*/
-        file = elmnt.getAttribute('w3-include-html');
-        if (file) {
-          /* Make an HTTP request using the attribute value as the file name: */
-          xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function () {
-            if (this.readyState == 4) {
-              if (this.status == 200) {
-                elmnt.innerHTML = this.responseText;
-              }
-              if (this.status == 404) {
-                elmnt.innerHTML = 'Page not found.';
-              }
-              /* Remove the attribute, and call this function once more: */
-              elmnt.removeAttribute('w3-include-html');
-              includeHTML();
-            }
-          };
-          xhttp.open('GET', file, true);
-          xhttp.send();
-          /* Exit the function: */
-          return;
-        }
-      }
-    }
-  </script>
-  <script>
-    includeHTML();
-  </script>
+  

@@ -27,17 +27,16 @@
 .check_label::before {
     content: '';
     display: block;
-    position: absolute;
     width: 15px;
     height: 15px;
     border: solid 1px; 
     border-color: #ACACAC; 
     border-radius: 3px;
-    left: -20px;
-    bottom: 2px;
+    bottom: -4px;
 }
 
 .check_label:checked + .check {
-    background: ;
-    background-color: red;
+    content: '\2714';
+    color: black;
+    background-color: black;
 }
